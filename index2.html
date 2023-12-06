@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #counter{
+            background-color: orange;
+            color: black;
+            display: inline-block;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+ <button onclick="plusHandler()"> plus </button>
+ <button onclick="minusHandler()"> minus </button>
+ <div>you click button <span id="counnter"> 0 </span>times</div>
+ 
+ <script>
+        let count = 0 ;
+        let plusHandler = function(){
+            count++;
+            if (count<0) {
+                document.getElementById('counter').style.background = red;
+            }
+            else if (count>=0 && count<10){
+                document.getElementById('counter').style.background = orange;
+            }
+            else{
+                document.getElementById('counter').style.background = green;
+            }
+            document.getElementById('counter').innerHTML= count;
+
+        }
+        function minusHandler(){
+            count --;
+            if (count<0) {
+                document.getElementById('counter').style.background = red;
+            }
+            else if (count>=0 && count<10){
+                document.getElementById('counter').style.background = orange;
+            }
+            else{
+                document.getElementById('counter').style.background = green;
+            }
+            document.getElementById('counter').innerHTML=count;
+
+        }
+
+ </script>   
+</body>
+</html>
