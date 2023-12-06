@@ -24,13 +24,11 @@
         let plusHandler = function(){
             count++;
             if (count<0) {
-                document.getElementById('counter').style.background = red;
-            }
-            else if (count>=0 && count<10){
-                document.getElementById('counter').style.background = orange;
-            }
-            else{
-                document.getElementById('counter').style.background = green;
+                document.getElementById('counter').style.background = 'red';
+            } else if (count>=0 && count<10){
+                document.getElementById('counter').style.background = 'orange';
+            } else {
+                document.getElementById('counter').style.background = 'green';
             }
             document.getElementById('counter').innerHTML= count;
 
@@ -38,13 +36,11 @@
         function minusHandler(){
             count --;
             if (count<0) {
-                document.getElementById('counter').style.background = red;
-            }
-            else if (count>=0 && count<10){
-                document.getElementById('counter').style.background = orange;
-            }
-            else{
-                document.getElementById('counter').style.background = green;
+                document.getElementById('counter').style.background = 'red';
+            } else if (count>=0 && count<10){
+                document.getElementById('counter').style.background = 'orange';
+            } else {
+                document.getElementById('counter').style.background = 'green';
             }
             document.getElementById('counter').innerHTML=count;
 
